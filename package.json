@@ -1,0 +1,13 @@
+{
+  "name": "@civ-clone/base-spaceship",
+  "version": "0.0.0",
+  "description": "Spaceship mechanics for a rule set to use: losing a ship with its capital or its civilization, a ship for a civilization that joins late, stopping parts for a ship in flight, and the first ship to arrive landing.",
+  "repository": "git@github.com:civ-clone/base-spaceship.git",
+  "keywords": [
+    "typescript",
+    "civilization"
+  ],
+  "author": "dom111 <dom111@users.noreply.github.com>",
+  "license": "MIT",
+  "private": false
+}
