@@ -1,7 +1,7 @@
 {
   "name": "@civ-clone/base-spaceship",
   "version": "0.1.0",
-  "description": "Spaceship mechanics for a rule set to use: losing a ship with its capital or its civilization, a ship for a civilization that joins late, stopping parts for a ship in flight, and the first ship to arrive landing.",
+  "description": "Spaceship mechanics for a rule set to use: losing a ship with its capital or its civilization, a ship for a civilization that joins late, stopping parts for a ship in flight, the first ship to arrive landing, and the rules an AI client reads for a computer player's parts and launch.",
   "repository": "git@github.com:civ-clone/base-spaceship.git",
   "keywords": [
     "typescript",
@@ -26,7 +26,6 @@
   },
   "devDependencies": {
     "@civ-clone/core-game-year": "^0.1.6",
-    "@civ-clone/core-rule": "^0.1.9",
     "@civ-clone/core-turn-based-game": "^0.1.10",
     "@types/chai": "^4.0.0",
     "@types/mocha": "^10.0.0",
@@ -41,6 +40,7 @@
     "@civ-clone/core-city": "^0.1.25",
     "@civ-clone/core-city-build": "^0.1.23",
     "@civ-clone/core-player": "^0.1.10",
+    "@civ-clone/core-rule": "^0.1.9",
     "@civ-clone/core-spaceship": "^0.1.10"
   }
 }

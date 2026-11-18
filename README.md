@@ -18,4 +18,14 @@ registration, and decides when each applies:
 - `lib/landFirstArrival`: `landFirstArrival(playerRegistry, spaceshipRegistry)` checks each player's ship in player
   order (`Spaceship#check`) and stops at the first that lands, which it returns. Call it at the end of a turn.
 
-A library: it registers no rules. See `civ1-spaceship` for Civilization's.
+And two rule classes, for a rule set whose own computer players build and launch their ships in their own way, which
+an AI client asks before deciding for itself (with no rule, or no answer, it decides as it would without them):
+
+- `lib/Rules/ComputerSpaceshipPart`: `Rule<[Spaceship, available, building], typeof Part | null>`, the part a computer
+  player adds next, of the kinds a city can build now (`available`), given those its other cities are `building`;
+  `null` for none of them.
+- `lib/Rules/ComputerLaunch`: `Rule<[Spaceship], boolean>`, whether a computer player launches its ship now. The ship
+  still launches only if its `Launchable` rules allow it.
+
+A library: it registers no rules. See `civ1-spaceship` for Civilization's, and `civ2-spaceship` for Civilization II's,
+which registers both rule classes.
